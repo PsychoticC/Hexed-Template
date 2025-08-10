@@ -1,0 +1,697 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>Hexed_Template</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="AVProVideo.Extensions.Timeline">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\AVProVideo.Extensions.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="AVProVideo.Extensions.UnityUI">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\AVProVideo.Extensions.UnityUI.dll</HintPath>
+    </Reference>
+    <Reference Include="AVProVideo.Extensions.VisualEffectGraph">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\AVProVideo.Extensions.VisualEffectGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="AVProVideo.Runtime">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\AVProVideo.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="BeeByteObfuscator">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\BeeByteObfuscator.dll</HintPath>
+    </Reference>
+    <Reference Include="BlobHandles.Runtime">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\BlobHandles.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Collections.Pooled">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Collections.Pooled.dll</HintPath>
+    </Reference>
+    <Reference Include="ConsoleTool">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Runtime\ConsoleTool.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreRuntime">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Runtime\CoreRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="DataModel">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\DataModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Depthkit.Core">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Depthkit.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Depthkit.Studio">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Depthkit.Studio.dll</HintPath>
+    </Reference>
+    <Reference Include="Depthkit.Studio.Lite">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Depthkit.Studio.Lite.dll</HintPath>
+    </Reference>
+    <Reference Include="DeviceConfig">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\DeviceConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween.Modules">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\DOTween.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="Epic.OnlineServices">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Epic.OnlineServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Win64">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Runtime\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMicrosoft.Bcl.TimeProvider">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppMicrosoft.Bcl.TimeProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMicrosoft.Extensions.DependencyInjection">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppMicrosoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMicrosoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppMicrosoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMicrosoft.Extensions.Logging">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppMicrosoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMicrosoft.Extensions.Logging.Abstractions">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppMicrosoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMicrosoft.Extensions.Options">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppMicrosoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMicrosoft.Extensions.Primitives">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppMicrosoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMono.Security">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppMono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Collections.Immutable">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Configuration">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Data">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Diagnostics.DiagnosticSource">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Drawing">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.IO.Compression">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.IO.Compression.FileSystem">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.IO.Hashing">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.IO.Hashing.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Net.Http">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Numerics">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Runtime.CompilerServices.Unsafe">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Runtime.Serialization">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Text.Encodings.Web">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Text.Json">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Threading.Channels">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml.Linq">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Il2CppSystem.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="io.sentry.unity.runtime">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\io.sentry.unity.runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="iOSInfo">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\iOSInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Klak.Spout.Runtime">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Klak.Spout.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Localization.Database">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Localization.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Localization.LocalizableString">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Localization.LocalizableString.dll</HintPath>
+    </Reference>
+    <Reference Include="Localization.StringFormatting">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Localization.StringFormatting.dll</HintPath>
+    </Reference>
+    <Reference Include="MeaMod.DNS">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\MeaMod.DNS.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediapipe.Runtime">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Mediapipe.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="NtpTimestamp">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\NtpTimestamp.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.Platform">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Oculus.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.VR">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Oculus.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="OscCore.Runtime">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\OscCore.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon-DotNet">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Photon-DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Purchasing.Common">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Purchasing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="RenderHeads.AVProMovieCapture.Runtime">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\RenderHeads.AVProMovieCapture.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sentry.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sentry.Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Buffers">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sentry.System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Collections.Immutable">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sentry.System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Memory">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sentry.System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Numerics.Vectors">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sentry.System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Reflection.Metadata">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sentry.System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Runtime.CompilerServices.Unsafe">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sentry.System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Text.Encodings.Web">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sentry.System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Text.Json">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sentry.System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Threading.Tasks.Extensions">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sentry.System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.Unity">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sentry.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.Unity.Native">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sentry.Unity.Native.dll</HintPath>
+    </Reference>
+    <Reference Include="Sigtrap.VrTunnellingPro">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Sigtrap.VrTunnellingPro.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamVR">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\SteamVR.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamVR_Actions">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\SteamVR_Actions.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Addressables">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UniTask.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.DOTween">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UniTask.DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Linq">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UniTask.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.TextMeshPro">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UniTask.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.AI.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Configuration">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Services.Core.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Device">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Services.Core.Device.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments.Internal">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Services.Core.Environments.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Internal">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Services.Core.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Registration">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Services.Core.Registration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Scheduler">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Services.Core.Scheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Telemetry">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Services.Core.Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Threading">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Services.Core.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.XR.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenVR">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Unity.XR.OpenVR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ContentLoadModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.ContentLoadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.NVIDIAModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.NVIDIAModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PropertiesModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.PropertiesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.AppleCore">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.Purchasing.AppleCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.AppleMacosStub">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.Purchasing.AppleMacosStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.AppleStub">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.Purchasing.AppleStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.WinRTCore">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.Purchasing.WinRTCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.WinRTStub">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.Purchasing.WinRTStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Utf8StringInterpolation">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Utf8StringInterpolation.dll</HintPath>
+    </Reference>
+    <Reference Include="Valve.Newtonsoft.Json">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\Valve.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="vrc-oscquery-lib">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\vrc-oscquery-lib.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.CameraSystems">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.CameraSystems.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.CodeAnalysis">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Core.Networking.Codec">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Core.Networking.Codec.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Core.Networking.FlatBuffers">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Core.Networking.FlatBuffers.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Core.Networking.Tools">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Core.Networking.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Dynamics">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Dynamics.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Logging">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.SDK3.Depthkit">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.SDK3.Depthkit.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.SDK3.Dynamics.Constraint">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.SDK3.Dynamics.Constraint.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.SDK3.Dynamics.Contact">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.SDK3.Dynamics.Contact.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.SDK3.Dynamics.PhysBone">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.SDK3.Dynamics.PhysBone.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.SDKBase.Editor.BuildPipeline">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.SDKBase.Editor.BuildPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.SDKInterface">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.SDKInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Udon.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.ClientBindings">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Udon.ClientBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.Common">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Udon.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.Security">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Udon.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.Serialization.AOT">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Udon.Serialization.AOT.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.Serialization.OdinSerializer">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Udon.Serialization.OdinSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.VM">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Udon.VM.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.VRCWrapperModules">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Udon.VRCWrapperModules.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Udon.Wrapper">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Udon.Wrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.UI.Core">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.UI.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.UI.Elements">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.UI.Elements.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.UI.Shared">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.UI.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="VRC.Utility">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRC.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCCore-Editor">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRCCore-Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCCore-Standalone">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRCCore-Standalone.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCEconomy">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRCEconomy.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDK2">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRCSDK2.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDK3">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRCSDK3.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDK3A">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRCSDK3A.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDK3P">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRCSDK3P.dll</HintPath>
+    </Reference>
+    <Reference Include="VRCSDKBase">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\VRCSDKBase.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="WebTransMtn">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\WebTransMtn.dll</HintPath>
+    </Reference>
+    <Reference Include="ZLinq">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\ZLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="ZLogger">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\ZLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="__Generated">
+      <HintPath>H:\SteamLibrary\steamapps\common\VRChat\Hexed\Dummy\__Generated.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
